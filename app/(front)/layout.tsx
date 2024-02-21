@@ -7,9 +7,11 @@ export default function FrontLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="h-full bg-zinc-100">
+    <div className="h-full bg-gradient-to-r from-green-600 to-pink-600">
       <Navbar />
-      <main className="pt-40 pb-20 bg-zinc-100">{children}</main>
+      <main className="pt-40 pb-20 bg-gradient-to-r from-green-600 to-pink-600">
+        {children}
+      </main>
       <Footer />
     </div>
   );
