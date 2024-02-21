@@ -26,7 +26,7 @@ export default function FrontPage() {
         <h1 className="text-3xl md:text-6xl text-center text-zinc-100 mb-6">
           Bring all your tasks and tools
         </h1>
-        <div className="text-3xl md:text-6xl bg-gradient-to-r from-pink-600 to-green-600 text-white px-4 p-2 rounded-md pb-4 w-fit">
+        <div className="text-3xl md:text-6xl bg-gradient-to-r from-pink-600 to-blue-600 text-white px-4 p-2 rounded-md pb-4 w-fit">
           together
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function FrontPage() {
         accomplish it all with Taskify.
       </div>
       <Button className="mt-12" size="xl" asChild>
-        <Link href="/sign-up" className="text-base">
+        <Link href="/sign-up">
           Get Taskify for free
         </Link>
       </Button>
