@@ -1,7 +1,9 @@
+import { Info } from "./_components/info";
+
 export default function OrganizationIdPage() {
   return (
-    <div>
-      Organization Page
+    <div className="w-full mb-20">
+      <Info />
     </div>
   )
 }
