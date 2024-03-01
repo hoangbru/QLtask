@@ -58,11 +58,15 @@ export const ListForm = () => {
     const title = formData.get("title") as string;
     const boardId = formData.get("boardId") as string;
 
+    if (title.trim() === "") {
+      return disableEditing();
+    }
+
     execute({
       title,
-      boardId
+      boardId,
     });
-  }
+  };
 
   if (isEditing) {
     return (

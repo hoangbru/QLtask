@@ -31,8 +31,8 @@ export const FormPopover = ({
   align,
   sideOffset = 0,
 }: FormPopoverProps) => {
-  const router = useRouter()
-  const closeRef = useRef<ElementRef<"button">>(null)
+  const router = useRouter();
+  const closeRef = useRef<ElementRef<"button">>(null);
   const { execute, fieldErrors } = useAction(createBoard, {
     onSuccess: (data) => {
       toast.success("Board created!");
@@ -47,6 +47,10 @@ export const FormPopover = ({
   const onSubmit = (formData: FormData) => {
     const title = formData.get("title") as string;
     const image = formData.get("image") as string;
+
+    if (title.trim() === "") {
+      return toast.error("Something went wrong")
+    }
 
     execute({ title, image });
   };
