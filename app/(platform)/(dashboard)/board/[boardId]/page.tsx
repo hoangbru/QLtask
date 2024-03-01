@@ -18,7 +18,7 @@ export default async function BoardIdPage({ params }: BoardIdPageProps) {
     return redirect("select-org");
   }
 
-  const lists = await db.list?.findMany({
+  const lists = await db.list.findMany({
     where: {
       boardId: params.boardId,
       board: { orgId },
@@ -36,9 +36,7 @@ export default async function BoardIdPage({ params }: BoardIdPageProps) {
   });
   return (
     <div className="p-4 h-full overflow-x-auto">
-    <ListContainer
-      boardId={params.boardId}
-      data={lists}
-    />
-  </div>);
+      <ListContainer boardId={params.boardId} data={lists} />
+    </div>
+  );
 }
