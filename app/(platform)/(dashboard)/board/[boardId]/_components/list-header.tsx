@@ -12,9 +12,10 @@ import { ListOptions } from "./list-options";
 
 interface ListHeaderProps {
   data: List;
+  onAddCard: () => void;
 }
 
-export const ListHeader = ({ data }: ListHeaderProps) => {
+export const ListHeader = ({ data, onAddCard}: ListHeaderProps) => {
   const { execute } = useAction(updateList, {
     onSuccess(data) {
       toast.success(`Renamed to "${data.title}"`);
@@ -97,7 +98,7 @@ export const ListHeader = ({ data }: ListHeaderProps) => {
       )}
       <ListOptions
         data={data}
-        onAddCard={() => {}}
+        onAddCard={onAddCard}
       /> 
     </div>
   );
