@@ -1,6 +1,8 @@
 import { notFound, redirect } from "next/navigation";
 import { auth } from "@clerk/nextjs";
+
 import { db } from "@/lib/db";
+
 import { BoardNavbar } from "./_components/board-navbar";
 
 export async function generateMetadata({
