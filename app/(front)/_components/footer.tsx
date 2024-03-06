@@ -10,7 +10,7 @@ export const Footer = () => {
         <div>
           <Logo className="flex md:hidden" />
           <p className="hidden md:block text-sm font-medium text-zinc-800">
-            &copy; {currentYear} Chisync
+            &copy; {currentYear} QLtask
           </p>
         </div>
         <div className="hidden space-x-4 md:block md:w-auto items-center justify-between w-full">
