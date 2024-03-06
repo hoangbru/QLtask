@@ -58,7 +58,7 @@ export const BoardList = async () => {
             <Hint
               sideOffset={40}
               description={`
-                  Free Workspaces can have up to 5 open boards. For unlimited boards upgrade this workspace.
+                  Free Workspaces can have up to 10 open boards. For unlimited boards upgrade this workspace.
                 `}
             >
               <HelpCircle className="absolute bottom-2 right-2 h-[14px] w-[14px]" />
