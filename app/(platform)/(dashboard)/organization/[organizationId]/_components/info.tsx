@@ -6,7 +6,7 @@ import Image from "next/image";
 import React from "react";
 
 interface InfoProps {
-  isPro?: boolean;
+  isPro: boolean;
 }
 
 export const Info = ({ isPro }: InfoProps) => {
