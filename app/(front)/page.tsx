@@ -38,11 +38,11 @@ export default function FrontPage() {
       >
         Collaborate, manage projects, and reach new productivity peaks. From
         high rises to the home office, the way your team works is unique -
-        accomplish it all with Taskify.
+        accomplish it all with QLtask.
       </div>
       <Button className="mt-12" size="xl" asChild>
         <Link href="/sign-up">
-          Get Taskify for free
+          Get QLtask for free
         </Link>
       </Button>
     </div>

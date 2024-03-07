@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is a personal project called QLtask, which is built based on the Trello.
 
-## Getting Started
+## Preview
+![image](https://private-user-images.githubusercontent.com/117178988/310811166-0bcd01a4-d9ca-4704-9518-8bf157e8f818.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4MDIxMjAsIm5iZiI6MTcwOTgwMTgyMCwicGF0aCI6Ii8xMTcxNzg5ODgvMzEwODExMTY2LTBiY2QwMWE0LWQ5Y2EtNDcwNC05NTE4LThiZjE1N2U4ZjgxOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwN1QwODU3MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNDM3NzM1MmI1NTZhZjVlMjlmNDI5Y2EzMzY3ZDQ3MDMxOWE5YzcwZjUyYmY2YzcwOThhNDgxYjU2MGFlYzRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.7LDuM6VVtJ_REtCVMqGA5FHG6qXO6GbwRsYPI6A1HsM)
 
-First, run the development server:
+![image](https://private-user-images.githubusercontent.com/117178988/310810642-e8a7da02-6fba-445a-a828-5efaf7f9c077.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4MDIxMjAsIm5iZiI6MTcwOTgwMTgyMCwicGF0aCI6Ii8xMTcxNzg5ODgvMzEwODEwNjQyLWU4YTdkYTAyLTZmYmEtNDQ1YS1hODI4LTVlZmFmN2Y5YzA3Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwN1QwODU3MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNGYzODE2MzYxNzVlZjVmM2U0NzQwODFiYjM5NzllNWQwODdlOWQ3OTA0OTc4MTgwZDg1YzAxOTJkYTQ2MjgyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.SWmXAzartEZCgRMXYliq5EjyJgl68vgIiCdixaEazAg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![image](https://private-user-images.githubusercontent.com/117178988/310810855-64c82b85-9f62-4434-a04b-c76575540ce6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4MDIxMjAsIm5iZiI6MTcwOTgwMTgyMCwicGF0aCI6Ii8xMTcxNzg5ODgvMzEwODEwODU1LTY0YzgyYjg1LTlmNjItNDQzNC1hMDRiLWM3NjU3NTU0MGNlNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwN1QwODU3MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hODQ0Y2Y1YjdlYzQxZTQxOGI2ZTI5NTJkNTFmYTRhNDk2YzcxODUwNjY1MjAxZTg4NDVmZTZjYThmYjc4ODY4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.7C6pZOHQHOyvBQs80VxW7aAeMFMnCwZ3j0aEPYc8eVg)
+
+![image](https://private-user-images.githubusercontent.com/117178988/310815431-bb4118fb-6e04-4d23-aa7c-189a14b4f84a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk4MDI1MTksIm5iZiI6MTcwOTgwMjIxOSwicGF0aCI6Ii8xMTcxNzg5ODgvMzEwODE1NDMxLWJiNDExOGZiLTZlMDQtNGQyMy1hYTdjLTE4OWExNGI0Zjg0YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwN1QwOTAzMzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MTZkMWJiYTA4NzUyNmFmYjRmYTM3YzU1ZjVlYzBiYzg2YzdmYWNlZjgxNGE3ZjFmNzBmMjc3YTc4NDFhNTFhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.dVWZ3a0K5_ym4UiPC5lgiBMz4t82wb5yvlqg7suUuLY)
+
+Key Features:
+- Auth 
+- Organizations / Workspaces
+- Board, list, card creation
+- Activity log for entire organization
+- List, card drag & drop reorder and copy
+- Stripe subscription for each organization to unlock unlimited boards
+
+## Main Technologies
+
+- Next.js, Server Actions.
+- Tailwind CSS, shadcn/ui.
+- React-query, Prisma.
+- Stripe
+
+### Prerequisites
+
+**Node version 18.17.x or later**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/hoangbru/QLtask.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Setup .env file
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+```js
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+DATABASE_URL=
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
+NEXT_PUBLIC_STRIPE_API_KEY=
+STRIPE_WEBHOOK_SECRET=
+NEXT_PUBLIC_APP_URL=
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Setup Prisma
 
-## Deploy on Vercel
+Add PostgreSQL Database
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```shell
+npx prisma migrate dev 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+
+### Start the app
+
+```shell
+npm run dev
+```
+Now the project is running on port 3000 (http://localhost:3000).
