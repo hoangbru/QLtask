@@ -47,12 +47,12 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         line_items: [
           {
             price_data: {
-              currency: "VND",
+              currency: "USD",
               product_data: {
                 name: "QLtask Pro",
                 description: "Unlimited boards for your organization",
               },
-              unit_amount: 20000,
+              unit_amount: 50,
               recurring: {
                 interval: "month",
               },
